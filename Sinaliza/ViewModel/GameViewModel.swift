@@ -10,20 +10,21 @@ import Foundation
 import SwiftUI
 
 @Observable class GameViewModel {
-    var score: Int = 0
-    
-    var countdown: Int = 3
-    var isCounting: Bool = false
-    var takePhoto: Bool = false
-    var capturedImage: UIImage?
-    
-    var gameFinished: Bool = false
-    
+    // MARK: - Estado do jogo
     var currentLetter: String = ""
     @ObservationIgnored let allLetters = Array("ABCDEFGILMNOPQRSTUVWY").map { String($0) }
     @ObservationIgnored var usedLetters: Set<String> = []
+    var gameFinished: Bool = false
 
+    // MARK: - Contagem regressiva
+    var countdown: Int = 3
+    var isCounting: Bool = false
+    var takePhoto: Bool = false
     @ObservationIgnored var timer: Timer?
+
+    // MARK: - Pontuação
+    var score: Int = 0
+    var capturedImage: UIImage?
     
     init() {
         score = UserDefaults.standard.integer(forKey: "score")
@@ -74,11 +75,12 @@ import SwiftUI
         UserDefaults.standard.set(score, forKey: "score")
     }
 
-    func restart() {
+    func resetGame() {
         if usedLetters.count == allLetters.count {
             usedLetters.removeAll()
         }
         score = 0
         UserDefaults.standard.set(score, forKey: "score")
+        sortLetter()
     }
 }

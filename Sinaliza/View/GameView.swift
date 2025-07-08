@@ -49,6 +49,7 @@ struct GameView: View {
                 
                 if viewModel.canSortLetter() {
                     Button("Pular") {
+                        viewModel.restoreLetter()
                         viewModel.sortLetter()
                     }
                     .buttonStyle(.borderedProminent)
@@ -124,8 +125,7 @@ struct GameView: View {
                 }
             }
             .onAppear {
-                viewModel.sortLetter()
-                viewModel.restart()
+                viewModel.resetGame()
             }
             .onChange(of: viewModel.takePhoto) {
                 if viewModel.takePhoto {
