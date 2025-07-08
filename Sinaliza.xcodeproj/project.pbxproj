@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9CB9FB0F2E1D573A009D8816 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9CB9FB0E2E1D572E009D8816 /* LICENSE.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9C42226A2DE9DA000019DB67 /* Sinaliza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinaliza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB9FB0E2E1D572E009D8816 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		9C4222612DE9DA000019DB67 = {
 			isa = PBXGroup;
 			children = (
+				9CB9FB0E2E1D572E009D8816 /* LICENSE.txt */,
 				9C42226C2DE9DA000019DB67 /* Sinaliza */,
 				9C42226B2DE9DA000019DB67 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB9FB0F2E1D573A009D8816 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
