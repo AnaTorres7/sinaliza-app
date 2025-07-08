@@ -24,11 +24,28 @@ Promover o aprendizado da Língua Brasileira de Sinais por meio de uma experiên
 
 ## Tecnologias utilizadas
 
-- **SwiftUI** — construção de interface moderna e declarativa
-- **AVFoundation** — captura de imagem com câmera frontal
-- **Vision** — detecção de pose da mão
-- **Core ML** — execução do modelo SVM convertido
-- **UserDefaults** — persistência de dados locais (pontuação)
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/) — construção de interface moderna e declarativa
+- [AVFoundation](https://developer.apple.com/documentation/avfoundation) — captura de imagem com a câmera frontal
+- [Vision](https://developer.apple.com/documentation/vision) — detecção de pose da mão
+- [Core ML](https://developer.apple.com/documentation/coreml) — execução local do modelo de aprendizado de máquina
+- [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults) — persistência de dados locais
+
+---
+
+## Versões utilizadas
+
+| Componente       | Versão        |
+|------------------|---------------|
+| Xcode            | 16.4          |
+| iOS SDK          | 18.5          |
+| Swift            | 6.1.2         |
+| Python           | 3.9           |
+| coremltools      | 6.3.0         |
+| scikit-learn     | 1.1.2         |
+| numpy            | 1.24.4        |
+| joblib           | 1.3.2         |
+| Vision Framework | iOS 17+       |
+| AVFoundation     | iOS 17+       |
 
 ---
 
