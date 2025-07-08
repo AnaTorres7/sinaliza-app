@@ -84,7 +84,31 @@ Promover o aprendizado da Língua Brasileira de Sinais por meio de uma experiên
 - Inclusão de níveis com conjuntos temáticos de sinais
 - Histórico de desempenho do usuário
 - Modo livre e modo jogo
-- Integrção com Game Center
+- Integração com Game Center
+
+---
+
+## Repositório e escopo
+
+Este repositório contém o código-fonte completo do aplicativo iOS **Sinaliza**, incluindo:
+
+- Interface construída com SwiftUI
+- Captura e processamento da imagem com Vision
+- Extração de atributos da mão para uso em predição
+- Integração com o modelo `svm_pipeline.mlpackage` convertido para Core ML
+- Fluxo do jogo, pontuação e feedback em tempo real
+
+---
+
+### Conteúdos externos ao repositório
+
+O repositório **não inclui** os seguintes arquivos ou scripts auxiliares utilizados durante o desenvolvimento:
+
+- Script de extração de atributos a partir do dataset original (`cnn-libras`) e geração do `.csv`
+- Scripts de treinamento e teste do modelo SVM no Google Colab
+- Script de conversão do modelo `.pkl` para `.mlpackage` com `coremltools`
+- O próprio dataset de imagens, que pode ser acessado publicamente em:  
+  [https://github.com/lucaaslb/cnn-libras](https://github.com/lucaaslb/cnn-libras)
 
 ---
 
