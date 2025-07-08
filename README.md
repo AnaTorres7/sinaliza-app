@@ -34,6 +34,7 @@ Promover o aprendizado da Língua Brasileira de Sinais por meio de uma experiên
 
 ## Modelo de Machine Learning
 
+- O modelo foi treinado com base no conjunto de dados [cnn-libras](https://github.com/lucaaslb/cnn-libras), criado por **Lucas Lacerda** (2022), que disponibiliza imagens dos sinais do alfabeto manual da Libras para aplicações em visão computacional e aprendizado de máquina.
 - Modelo treinado com `scikit-learn` (pipeline com `StandardScaler` + `SVC` com `probability=True`)
 - Salvo em `.pkl` e convertido para `.mlpackage` com `coremltools`
 - Entrada do modelo: vetor com 10 atributos derivados da posição da mão
