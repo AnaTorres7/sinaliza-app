@@ -79,27 +79,6 @@ Promover o aprendizado da Língua Brasileira de Sinais por meio de uma experiên
 
 ---
 
-## Estrutura futura planejada
-
-- Inclusão de níveis com conjuntos temáticos de sinais
-- Histórico de desempenho do usuário
-- Modo livre e modo jogo
-- Integração com Game Center
-
----
-
-## Repositório e escopo
-
-Este repositório contém o código-fonte completo do aplicativo iOS **Sinaliza**, incluindo:
-
-- Interface construída com SwiftUI
-- Captura e processamento da imagem com Vision
-- Extração de atributos da mão para uso em predição
-- Integração com o modelo `svm_pipeline.mlpackage` convertido para Core ML
-- Fluxo do jogo, pontuação e feedback em tempo real
-
----
-
 ### Conteúdos externos ao repositório
 
 O repositório **não inclui** os seguintes arquivos ou scripts auxiliares utilizados durante o desenvolvimento:
